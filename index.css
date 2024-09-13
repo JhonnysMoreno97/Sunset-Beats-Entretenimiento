@@ -50,8 +50,14 @@ nav ul li {
     /*Espacio entre los elementos*/
 }
 
+nav a {
+    color: #fff; /* Color del texto*/
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita para los enlaces */
+}
+
 nav a:hover {
-    color: #f4f4f4;
+    color: #aaaaaa;
     /*Color al pasar el más sobre el texto*/
 }
 
@@ -69,7 +75,7 @@ section {
 }
 
 section h2 {
-    color: #212121; /*Color del titulo de sección*/
+    color: #ffffff; /*Color del titulo de sección*/
     margin-bottom: 20px;
 }
 
@@ -138,4 +144,26 @@ form{
 form label{
     display: block; /* Etiquetas en bloque */
     margin-bottom: 5px;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Espaciado inferior entre campos */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados para los campos */
+}
+
+form button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde por defecto */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse sobre el botón */
 }
