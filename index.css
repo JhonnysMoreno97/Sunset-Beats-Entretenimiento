@@ -1,0 +1,85 @@
+/* Reset para Margenés y paddings*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo*/
+
+body {
+    font-family: Arial, sans-serif;
+    /*Se cambia la fuente a arial*/
+    color: #333;
+    /*Color del texto general*/
+    line-height: 1.6;
+    /*Espacio entre lineas*/
+    background-color: #f4f4f4;
+    /*Color de fondo*/
+}
+
+/*Encabezado*/
+
+header {
+    background: #212121;
+    /*Color de fondo del encabezado*/
+    color: #fff;
+    /*Color del texto de encabezado*/
+    padding: 20px 0;
+    /*Espacios entre lineas de arriba y abajo*/
+    text-align: center;
+    /*Se centra el texto*/
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    /*Tamaño de la fuente del encabezado */
+}
+
+/*Estilos de navegación*/
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    /*Los elementos del encabezado se pasan a una sola línea */
+    margin: 0 15px;
+    /*Espacio entre los elementos*/
+}
+
+nav a:hover {
+    color: #f4f4f4;
+    /*Color al pasar el más sobre el texto*/
+}
+
+/*Secciones*/
+
+section {
+    padding: 20px;
+    margin: 30px;
+    background: #fff;
+    /*Fondo para las secciones*/
+    border-radius: 8px;
+    /* Estilo del borde*/
+    box-shadow: 0 2px 2px;
+    /*Sombra*/
+}
+
+section h2 {
+    color: #212121; /*Color del titulo de sección*/
+    margin-bottom: 20px;
+}
+
+/*Estilos de los articulos*/
+
+article{
+    margin-bottom: 30px;
+}
+
+article h3 {
+    color: #007BFF; /*Color azul para los títulos de los articulos*/
+}
+
