@@ -83,3 +83,59 @@ article h3 {
     color: #007BFF; /*Color azul para los títulos de los articulos*/
 }
 
+/*Estilos de los enlaces de las secciones*/
+
+section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+    /*Subrayado al pasar el mouse por encima*/
+}
+
+/* Estilos de las imágenes */
+img {
+    max-width: 100%;
+    /* Hace que las imágenes sean responsivas */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    margin: 20px 0;
+    /* Espaciado vertical alrededor de las imágenes */
+    border-radius: 8px;
+    /* Bordes redondeados para las imágenes */
+}
+
+
+/* Estilos de la lista de redes sociales */
+
+ul {
+    list-style: none; /*Quita los puntos de la lista*/
+}
+
+ul li{
+    display: inline;
+    margin: 0 10px; /* Espaciado horizontal entre los elementos de redes sociales*/
+}
+
+/*Estilos del pie de página*/
+
+footer{
+    background: #212121; /*Color de fondo*/
+    color: #fff; /*Color del texto*/
+    text-align: center; /*Centrado del texto*/
+    padding-top: 30px; /*Espacio superiro*/
+}
+
+/*Estilos de los formularios de contacto*/
+
+form{
+    margin-top: 80px;
+}
+
+form label{
+    display: block; /* Etiquetas en bloque */
+    margin-bottom: 5px;
+}
