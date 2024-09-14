@@ -15,9 +15,10 @@ body {
     /*Color del texto general*/
     line-height: 1.6;
     /*Espacio entre lineas*/
-    background-color: #f4f4f4;
+    background-color: #333;
     /*Color de fondo*/
 }
+
 
 /*Encabezado*/
 
@@ -26,15 +27,16 @@ header {
     /*Color de fondo del encabezado*/
     color: #fff;
     /*Color del texto de encabezado*/
-    padding: 20px 0;
+    padding: 30px 0;
     /*Espacios entre lineas de arriba y abajo*/
     text-align: center;
     /*Se centra el texto*/
+
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     /*Tamaño de la fuente del encabezado */
 }
 
@@ -46,13 +48,12 @@ nav ul {
 nav ul li {
     display: inline;
     /*Los elementos del encabezado se pasan a una sola línea */
-    margin: 0 15px;
+    margin: 0 18px;
     /*Espacio entre los elementos*/
 }
 
 nav a {
     color: #fff; /* Color del texto*/
-    text-decoration: none; /* Quita el subrayado de los enlaces */
     font-weight: bold; /* Texto en negrita para los enlaces */
 }
 
@@ -61,6 +62,17 @@ nav a:hover {
     /*Color al pasar el más sobre el texto*/
 }
 
+.img_inicio {
+    float: right;
+    position: relative;
+    top: -90px;
+    border-radius: 100%;
+}
+
+.event-image{
+    position: relative;
+    
+}
 /*Secciones*/
 
 section {
@@ -70,7 +82,7 @@ section {
     /*Fondo para las secciones*/
     border-radius: 8px;
     /* Estilo del borde*/
-    box-shadow: 0 2px 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     /*Sombra*/
 }
 
@@ -102,6 +114,7 @@ section a:hover {
     /*Subrayado al pasar el mouse por encima*/
 }
 
+
 /* Estilos de las imágenes */
 img {
     max-width: 100%;
@@ -114,6 +127,17 @@ img {
     /* Bordes redondeados para las imágenes */
 }
 
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Estilos de la lista de redes sociales */
 
@@ -164,6 +188,22 @@ form button {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+/* Diseño responsive para móviles */
+@media (max-width: 768px) {
+    .seccion-imagenes {
+        flex-direction: column;
+    }
+
+    .seccion-imagenes img {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .seccion-imagenes .texto {
+        text-align: center;
+        padding: 0;
+    }
+}
 form button:hover {
     background-color: #0056b3; /* Color más oscuro al pasar el mouse sobre el botón */
 }
