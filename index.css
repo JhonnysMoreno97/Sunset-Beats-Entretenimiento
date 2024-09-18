@@ -17,6 +17,7 @@ body {
     /*Espacio entre lineas*/
     background-color: #333;
     /*Color de fondo*/
+    
 }
 
 
@@ -115,6 +116,22 @@ section h2 {
 
 /*Estilos de los articulos*/
 
+/* Estilos para el filtro de eventos */
+.filtro-eventos {
+    text-align:right;
+    margin-bottom: 20px;
+}
+
+.filtro-eventos label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filtro-eventos select {
+    padding: 5px 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
 article{
     margin-bottom: 30px;
 }

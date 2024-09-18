@@ -24,3 +24,26 @@ toggleButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light'); // Se guardar preferencia
     }
 });
+
+
+// Funcionalidad de filtro de eventos
+const filtroUbicacion = document.getElementById('filtro-ubicacion');
+const eventos = document.querySelectorAll('.evento-item');
+
+filtroUbicacion.addEventListener('change', () => {
+    const seleccion = filtroUbicacion.value;
+
+    eventos.forEach(evento => {
+        const ubicacion = evento.querySelector('.texto p:nth-child(4)').textContent.toLowerCase();
+
+        if (seleccion === 'Todos') {
+            evento.style.display = 'flex';
+        } else {
+            if (ubicacion.includes(seleccion)) {
+                evento.style.display = 'flex';
+            } else {
+                evento.style.display = 'none';
+            }
+        }
+    });
+});
