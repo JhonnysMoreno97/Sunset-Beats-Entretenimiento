@@ -63,15 +63,20 @@ nav a:hover {
 }
 
 .img_inicio {
-    float: right;
     position: relative;
-    top: -90px;
+    float: right;
+        right: 60px;
+        top: -130px;
     border-radius: 100%;
 }
 
 .event-image{
-    position: relative;
     
+    position: relative;
+    right: -80px;
+    
+        top: -10px;
+
 }
 /*Secciones*/
 
@@ -114,6 +119,32 @@ section a:hover {
     /*Subrayado al pasar el mouse por encima*/
 }
 
+.Artista .image {
+    max-width: 100%;
+    margin: 0px;
+    /* Asegúrate de que la imagen no se desborde */
+    height: auto;
+    /* Mantén la relación de aspecto de la imagen */
+}
+
+
+/* Estilo para el texto */
+.Artista h3,
+.Artista p,
+.Artista a {
+    margin: 0;
+    /* Elimina márgenes adicionales */
+}
+
+/* Opcional: Ajusta el margen del texto si es necesario */
+.Artista h3,
+.Artista p {
+    margin-left: 720px;
+    /* Espacio entre la imagen y el texto */
+    align-items: flex-start;
+    margin-top: -10px;
+
+}
 
 /* Estilos de las imágenes */
 img {
