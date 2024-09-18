@@ -40,6 +40,23 @@ header h1 {
     /*Tamaño de la fuente del encabezado */
 }
 
+/* Botón para alternar modo oscuro/claro */
+#toggle-dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+    color: #ffd700;
+    /* Dorado al pasar el mouse */
+}
 /*Estilos de navegación*/
 nav ul {
     list-style: none;
@@ -183,12 +200,15 @@ ul li{
 
 /*Estilos del pie de página*/
 
-footer{
-    background: #212121; /*Color de fondo*/
-    color: #fff; /*Color del texto*/
-    text-align: center; /*Centrado del texto*/
-    padding-top: 30px; /*Espacio superiro*/
+footer {
+    background: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
 
 /*Estilos de los formularios de contacto*/
 
@@ -235,6 +255,55 @@ form button {
         padding: 0;
     }
 }
+#toggle-dark-mode {
+    top: 10px;
+    right: 10px;
+}
 form button:hover {
     background-color: #0056b3; /* Color más oscuro al pasar el mouse sobre el botón */
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background: #1f1f1f;
+}
+
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode nav a:hover {
+    color: #ffd700;
+}
+
+body.dark-mode section {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode section h2 {
+    color: #ffffff;
+}
+
+body.dark-mode article h3 {
+    color: #1e90ff;
+}
+
+body.dark-mode section a {
+    color: #1e90ff;
+}
+
+body.dark-mode footer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+}
+
+/* Estilos de botones */
+button {
+    cursor: pointer;
 }
