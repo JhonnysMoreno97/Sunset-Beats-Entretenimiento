@@ -47,3 +47,32 @@ filtroUbicacion.addEventListener('change', () => {
         }
     });
 });
+
+
+// Funcionalidad del Carrusel
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const slides = carousel.querySelector('.slides');
+    const images = carousel.querySelectorAll('.slides img');
+    const prevButton = carousel.querySelector('.prev');
+    const nextButton = carousel.querySelector('.next');
+    let currentIndex = 0;
+
+    const updateSlidePosition = () => {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateSlidePosition();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateSlidePosition();
+    });
+
+    // Opcional: Autoplay
+    setInterval(() => {
+        nextButton.click();
+    }, 5000); // Cambia de imagen cada 5 segundos
+});

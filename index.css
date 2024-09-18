@@ -17,7 +17,7 @@ body {
     /*Espacio entre lineas*/
     background-color: #333;
     /*Color de fondo*/
-    
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 
@@ -323,4 +323,54 @@ body.dark-mode footer {
 /* Estilos de botones */
 button {
     cursor: pointer;
+}
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel .slides img {
+    min-width: 100%;
+    height: auto;
+
+}
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel .prev:hover,
+.carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel h3 {
+    left: 40px;
 }
